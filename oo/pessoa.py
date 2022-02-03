@@ -14,5 +14,10 @@ if __name__ == '__main__':
     print(mateus.nome)
     print(mateus.idade)
     print(lucimar.nome)
+    mateus.sobrenome = 'Leiros'
     for filho in lucimar.filhos:
         print(filho.nome)
+    print(lucimar.__dict__)
+    print(mateus.__dict__)
+    del mateus.sobrenome
+    print(mateus.__dict__)
