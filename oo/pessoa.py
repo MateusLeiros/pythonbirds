@@ -16,9 +16,12 @@ class Pessoa:
     @classmethod
     def nome_e_atributos_de_classe(cls):
         return f'{cls} - olhos: {cls.olhos}'
+    
+class Homem(Pessoa):
+    pass
 
 if __name__ == '__main__':
-    mateus = Pessoa(nome='Mateus', idade=27)
+    mateus = Homem(nome='Mateus', idade=27)
     lucimar = Pessoa(mateus, nome = 'Lucimar', idade=54)
     print(mateus.cumprimentar())
     print(mateus.nome)
