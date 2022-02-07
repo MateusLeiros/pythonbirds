@@ -2,6 +2,25 @@ class Carro:
     def __init__(self, motor, direcao):
         self.motor = motor
         self.direcao = direcao
+    
+    def calcular_velocidade(self):
+        return self.motor.velocidade
+    
+    def acelerar(self):
+        self.motor.acelerar()
+    
+    def frear(self):
+        self.motor.frear()
+    
+    def calcular_direcao(self):
+        return self.direcao.direcao
+    
+    def girar_a_direita(self):
+        self.direcao.girar_a_direita()
+    
+    def girar_a_esquerda(self):
+        self.direcao.girar_a_esquerda()
+
 
 class Motor:
     velocidade = 0
